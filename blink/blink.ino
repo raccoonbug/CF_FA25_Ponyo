@@ -23,7 +23,9 @@
 */
 
 // the setup function runs once when you press reset or power the board
-void setup() {
+void setup() { //morse code scene for boat in Ponyo
+
+  
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(9600);
@@ -34,38 +36,29 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
 
-sBlink();
-sBlink();
-sBlink();
-//delay(1000);
-oBlink();
-//delay(1000);
-oBlink();
-//delay(1000);
-oBlink();
-//delay(1000);
-sBlink();
-sBlink();
-sBlink();
+hBlink();
+hBlink();
+hBlink();
+hBlink();
+delay(500);
+eBlink();
 
-//code for the word "SOS"
+//code for the word "HELLO"
 
-//https://youtu.be/IRwwJtFURCI 
 
 }
 
-
-void sBlink() { //letter S
+void hBlink() { //letter h
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(500); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
   delay(500); 
-
 }
 
-void oBlink() { //letter O
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1500);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(1500); 
+void eBlink() { //letter e
+   digitalWrite(LED_BUILTIN, HIGH);
+  delay(500); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(500); 
 }
+
