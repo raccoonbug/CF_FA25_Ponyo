@@ -42,6 +42,10 @@ hBlink();
 hBlink();
 delay(500);
 eBlink();
+lBlink();
+lBlink();
+oBlink();
+
 
 //code for the word "HELLO"
 
@@ -61,4 +65,39 @@ void eBlink() { //letter e
   digitalWrite(LED_BUILTIN,LOW); //turns off LED
   delay(500); 
 }
+
+void lBlink() {//letter l 
+    digitalWrite(LED_BUILTIN, HIGH);
+  delay(200); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(200);
+    digitalWrite(LED_BUILTIN, HIGH);
+  delay(500); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(500);
+    digitalWrite(LED_BUILTIN, HIGH);
+  delay(200); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(200);
+    digitalWrite(LED_BUILTIN, HIGH);
+  delay(200); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(200);
+}
+
+void oBlink() { //letter o
+   digitalWrite(LED_BUILTIN, HIGH);
+  delay(700); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(700); 
+    digitalWrite(LED_BUILTIN, HIGH);
+  delay(700); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(700);
+    digitalWrite(LED_BUILTIN, HIGH);
+  delay(700); //wait for a sec
+  digitalWrite(LED_BUILTIN,LOW); //turns off LED
+  delay(700); 
+}
+
 
