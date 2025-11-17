@@ -1,12 +1,24 @@
 #include <Servo.h>
-const int switchPin = 8;
+const int armSwitch = 7;
 Servo myservo;
+Servo wave; // waves moving
+Servo ponyo; //ponyo in the bucket
+Servo arm; //Ponyo's dads arm
+int ServoAngle = 0;
+float speed = 0.5;
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(switchPin, INPUT);
-  myservo.attach(10);
-  myservo.write(0);
+  
+  pinMode(armSwitch, INPUT); //makes the arm move
+
+  wave.attach(10);
+  wave.write(0);
+
+  ponyo.attach(8);
+  ponyo.write(0);
+
+  arm.attach(6);
+  arm.write(0);
 
 }
 
