@@ -9,7 +9,7 @@ float speed = 0.5;
 
 void setup() {
   
-  pinMode(armSwitch, INPUT); //makes the arm move
+  pinMode(armSwitch, INPUT); //makes the arm move down
 
   wave.attach(10);
   wave.write(0);
