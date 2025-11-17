@@ -1,6 +1,6 @@
 #include <Servo.h>
 const int armSwitch = 7; //for arm
-Servo myservo;
+Servo speak; //ponyo talking
 Servo wave; // waves moving
 Servo ponyo; //ponyo in the bucket
 Servo arm; //Ponyo's dads arm
@@ -19,6 +19,9 @@ void setup() {
 
   arm.attach(6);
   arm.write(0);
+
+  speak.attach(4);
+  speak.write(0);
 
 }
 
