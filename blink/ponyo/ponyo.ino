@@ -1,5 +1,5 @@
 #include <Servo.h>
-const int armSwitch = 7;
+const int armSwitch = 7; //for arm
 Servo myservo;
 Servo wave; // waves moving
 Servo ponyo; //ponyo in the bucket
@@ -11,7 +11,7 @@ void setup() {
   
   pinMode(armSwitch, INPUT); //makes the arm move down
 
-  wave.attach(10);
+  wave.attach(10); 
   wave.write(0);
 
   ponyo.attach(8);
