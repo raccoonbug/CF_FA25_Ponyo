@@ -62,3 +62,4 @@ void eBlink() { //letter e
   delay(500); 
 }
 
+//no longer doing morse code since the scene with the morse code is earlier in the movie so it would make too much sense to do it now!
