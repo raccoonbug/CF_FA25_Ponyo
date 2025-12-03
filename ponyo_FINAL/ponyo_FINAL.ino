@@ -9,8 +9,8 @@ Servo speak; //ponyo talking
 Servo wave; // waves moving
 Servo ponyo; //ponyo in the bucket
 Servo arm; //Ponyo's dads arm
-//int ServoAngle = 0;
-//float speed = 0.5;
+
+
 
 void setup() {
   
@@ -50,14 +50,14 @@ void loop() {
   }
   //wave
   if (digitalRead(waves) == HIGH){
-    wave.write(180);
+    wave.write(360);
   } else {
     wave.write(0);
   }
 
   //ponyo in bucket
    if (digitalRead(bucket) == HIGH){
-    ponyo.write(180);
+    ponyo.write(360);
   } else {
     ponyo.write(0);
   }
@@ -69,6 +69,8 @@ void loop() {
     digitalWrite(ledPin, LOW);   // LED OFF
   }
 }
+
+//this is the final code !
 
 
 
